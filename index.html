@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>36ШИНМОНТАЖ — Воронеж, ул. Мостовая, 5Д | Лазерная балансировка, правка дисков, 24/7</title>
-<meta name="description" content="Профессиональный шиномонтаж в Воронеже: лазерная балансировка, раскатка и правка дисков, ремонт порезов, дошиповка. Выезд и экстренный приём 24/7.">
+<meta name="description" content="Шиномонтаж в Воронеже: лазерная балансировка, раскатка и правка дисков, ремонт порезов, дошиповка. Экстренный шиномонтаж 24/7.">
 <meta name="theme-color" content="#121314">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,30 +77,11 @@ h1 span { color: var(--red); }
 .facts b { display: block; font: 700 28px/1.1 var(--display); color: var(--txt); }
 .facts span { color: var(--mut); font-size: 14px; }
 
-/* Calculator */
-.calc { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); background: var(--panel); border-radius: 6px; overflow: hidden; }
-.calc > div { padding: 34px; }
-.calc-in { border-right: 1px solid var(--line); }
-.lbl { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--mut); margin: 0 0 10px; display: block; font-weight: 700; }
-.seg { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-.seg button { background: var(--panel2); color: var(--txt); border: 1px solid var(--line); padding: 11px 16px; font: 600 15px/1 var(--body); cursor: pointer; border-radius: 4px; transition: all .15s; }
-.seg button[aria-pressed=true] { background: var(--red); border-color: var(--red); color: #fff; }
-.seg.sizes button { font: 700 20px/1 var(--display); min-width: 58px; padding: 10px 8px; }
-.chk { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; font-size: 15px; cursor: pointer; color: var(--txt); }
-.chk input { accent-color: var(--red); width: 18px; height: 18px; }
-
-.calc-out { display: flex; flex-direction: column; justify-content: center; background: var(--panel2); }
-.big { font: 800 clamp(64px, 8vw, 108px)/.95 var(--display); color: var(--red); }
-.big small { font-size: .4em; color: var(--txt); margin-left: 6px; }
-.row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); color: var(--mut); font-size: 15px; }
-.row b { color: var(--txt); }
-.note { font-size: 13px; color: var(--mut); margin-top: 20px; line-height: 1.5; }
-
 /* Services Grid */
 .svc { background: var(--panel); border-block: 1px solid var(--line); }
 .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
-.svc-grid div { background: var(--panel); padding: 32px; }
-.svc-grid h3 { font-size: 26px; margin-bottom: 10px; color: var(--red); display: flex; align-items: center; gap: 10px; }
+.svc-grid div { background: var(--panel); padding: 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px; }
+.svc-grid h3 { font-size: 26px; color: var(--red); display: flex; align-items: center; gap: 10px; }
 .svc-grid p { color: var(--mut); font-size: 15px; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; }
@@ -146,13 +127,11 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
 @media(max-width:900px){
   section { padding: 60px 0; }
   nav { display: none; }
-  .hero-grid, .calc, .contacts { grid-template-columns: 1fr; }
-  .calc-in { border-right: 0; border-bottom: 1px solid var(--line); }
+  .hero-grid, .contacts { grid-template-columns: 1fr; }
   .facts { grid-template-columns: 1fr 1fr; }
   .svc-grid, .rev { grid-template-columns: 1fr; }
 }
 @media(max-width:520px){
-  .calc > div { padding: 24px 18px; }
   .f2 { grid-template-columns: 1fr; }
   .bar .btn { display: none; }
   .cta .btn { flex: 1; text-align: center; }
@@ -165,7 +144,6 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
   <div class="wrap bar">
     <a class="logo" href="#top">36ШИН<span>О</span>МОНТАЖ</a>
     <nav>
-      <a href="#prices">Цены</a>
       <a href="#services">Услуги</a>
       <a href="#reviews">Отзывы</a>
       <a href="#contacts">Контакты</a>
@@ -181,109 +159,88 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="tag-247">Экстренный вызов 24/7 — работаем и ночью</div>
+        <div class="tag-247">Экстренный шиномонтаж — даже ночью!</div>
         <h1>Шиномонтаж <span>любой</span> сложности</h1>
-        <p>Лазерная балансировка, раскатка стальных и правка литых дисков, дошиповка шин и выезд к авто по Воронежу.</p>
+        <p>Быстро, надежно, профессионально. Лазерная балансировка, правка дисков, дошиповка шин и выезд по Воронежу.</p>
         <div class="cta">
-          <a class="btn btn-main" href="tel:+79518788740"><i class="fa-solid fa-phone-volume"></i> Позвонить мастеру</a>
+          <a class="btn btn-main" href="tel:+79518788740"><i class="fa-solid fa-phone-volume"></i> Звоните сейчас</a>
           <button class="btn btn-line" data-max><i class="fa-solid fa-paper-plane"></i> Написать в Max</button>
         </div>
       </div>
       <div>
         <div class="hero-card">
-          <h3>Пробили колесо?</h3>
-          <p>Не ждите утра! Звоните прямо сейчас — оформим экстренный приём или выедем на место.</p>
-          <a class="btn btn-main" href="tel:+79518788740" style="width:100%"><i class="fa-solid fa-truck-medical"></i> Вызвать дежурного мастера</a>
+          <h3>Пробили колесо в темноте?</h3>
+          <p>Не ждите утра! Вызов мастера 24/7. Звоните прямо сейчас — оперативно решим проблему.</p>
+          <a class="btn btn-main" href="tel:+79518788740" style="width:100%"><i class="fa-solid fa-phone"></i> +7 (951) 878-87-40</a>
         </div>
       </div>
     </div>
 
     <div class="facts">
-      <div><b>г. Воронеж</b><span>ул. Мостовая, 5Д (Тенистый)</span></div>
-      <div><b>08:00 – 22:00</b><span>Ежедневно + Ночной прием 24/7</span></div>
+      <div><b>Воронеж</b><span>ул. Мостовая, 5Д</span></div>
+      <div><b>08:00 – 22:00</b><span>Ежедневно + 24/7 по звонку</span></div>
       <div><b>Лазерная</b><span>Высокоточная балансировка</span></div>
-      <div><b>Выезд</b><span>Помощь при проколах на дороге</span></div>
+      <div><b>Выезд</b><span>Помощь на дороге</span></div>
     </div>
   </div>
 </div>
 
-<!-- CALCULATOR & PRICES -->
-<section id="prices">
-  <div class="wrap">
-    <h2>Быстрый расчёт стоимости</h2>
-    <p class="lead">Выберите тип вашего авто и диаметр колёс. В цену входит комплексная замена на 4 колеса.</p>
-    
-    <div class="calc">
-      <div class="calc-in">
-        <span class="lbl">Тип автомобиля</span>
-        <div class="seg" id="types"></div>
-        
-        <span class="lbl">Диаметр колеса</span>
-        <div class="seg sizes" id="sizes"></div>
-        
-        <span class="lbl">Дополнительные опции</span>
-        <label class="chk"><input type="checkbox" data-add="100"> Низкий профиль (45 и ниже) (+100 ₽/колесо)</label>
-        <label class="chk"><input type="checkbox" data-add="100"> Датчики давления (+100 ₽/колесо)</label>
-        <label class="chk"><input type="checkbox" data-add="200"> Усиленные шины RunFlat (+200 ₽/колесо)</label>
-      </div>
-
-      <div class="calc-out" aria-live="polite">
-        <span class="lbl">Комплекс на 4 колеса</span>
-        <div class="big"><span id="p4">2 000</span><small>₽</small></div>
-        
-        <div class="row" style="margin-top:20px"><span>Снятие / установка</span><b id="r1">—</b></div>
-        <div class="row"><span>Монтаж / демонтаж</span><b id="r2">—</b></div>
-        <div class="row"><span>Лазерная балансировка</span><b id="r3">—</b></div>
-        <div class="row"><span>Одно колесо</span><b id="p1">—</b></div>
-        <div class="row"><span>Доплаты за 4 колеса</span><b id="padd">0 ₽</b></div>
-        <div class="row" id="row6" hidden><span>Шесть колёс</span><b id="p6"></b></div>
-        
-        <p class="note">Итоговая стоимость рассчитывается индивидуально для редких и нестандартных радиусов R22–R24. Точную цену мастер назовёт при осмотре.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- SERVICES -->
 <section id="services" class="svc">
   <div class="wrap">
-    <h2>Наши услуги</h2>
-    <p class="lead">Полный спектр шиномонтажных и ремонтных работ на современном оборудовании.</p>
+    <h2>Услуги мастерской</h2>
+    <p class="lead">Все основные работы со ссылкой на официальный постер 36ШИНМОНТАЖ.</p>
     
     <div class="svc-grid">
       <div>
-        <h3><i class="fa-solid fa-bullseye"></i> Лазерная балансировка</h3>
-        <p>Высокоточная калибровка колес с использованием лазерных датчиков для идеальной плавности хода.</p>
+        <div>
+          <h3><i class="fa-solid fa-bullseye"></i> Лазерная балансировка</h3>
+          <p>Максимально точная устраняющая вибрации балансировка колес на современном оборудовании.</p>
+        </div>
+        <a class="btn btn-line" href="tel:+79518788740" style="padding:10px 16px; font-size:13px"><i class="fa-solid fa-phone"></i> Уточнить стоимость</a>
       </div>
       <div>
-        <h3><i class="fa-solid fa-compact-disc"></i> Правка и раскатка</h3>
-        <p>Восстановление геометрии литых и раскатка стальных штампованных дисков любого диаметра.</p>
+        <div>
+          <h3><i class="fa-solid fa-compact-disc"></i> Правка и раскатка</h3>
+          <p>Раскатка стальных штампованных и правка литых дисков с выравниванием геометрии.</p>
+        </div>
+        <a class="btn btn-line" href="tel:+79518788740" style="padding:10px 16px; font-size:13px"><i class="fa-solid fa-phone"></i> Уточнить стоимость</a>
       </div>
       <div>
-        <h3><i class="fa-solid fa-wrench"></i> Ремонт порезов и грыж</h3>
-        <p>Устранение сложных боковых повреждений с гарантией безопасности на дороге.</p>
+        <div>
+          <h3><i class="fa-solid fa-sliders"></i> Адаптация колёс</h3>
+          <p>Адаптация и правильная настройка для комфортной и безопасной езды.</p>
+        </div>
+        <a class="btn btn-line" href="tel:+79518788740" style="padding:10px 16px; font-size:13px"><i class="fa-solid fa-phone"></i> Уточнить стоимость</a>
       </div>
       <div>
-        <h3><i class="fa-solid fa-snowflake"></i> Ошиповка шин</h3>
-        <p>Вторичная дошиповка зимней резины ремонтными шипами для продления срока службы.</p>
+        <div>
+          <h3><i class="fa-solid fa-snowflake"></i> Дошиповка шин</h3>
+          <p>Вторичная ошиповка зимней резины для продления срока её службы.</p>
+        </div>
+        <a class="btn btn-line" href="tel:+79518788740" style="padding:10px 16px; font-size:13px"><i class="fa-solid fa-phone"></i> Уточнить стоимость</a>
       </div>
       <div>
-        <h3><i class="fa-solid fa-sliders"></i> Адаптация колёс</h3>
-        <p>Настройка датчиков давления, мойка и подготовка колес к сезонному хранению.</p>
+        <div>
+          <h3><i class="fa-solid fa-shower"></i> Мойка колёс</h3>
+          <p>Тщательная очистка колес от грязи перед балансировкой и сезонным хранением.</p>
+        </div>
+        <a class="btn btn-line" href="tel:+79518788740" style="padding:10px 16px; font-size:13px"><i class="fa-solid fa-phone"></i> Уточнить стоимость</a>
       </div>
       <div>
-        <h3><i class="fa-solid fa-truck-pickup"></i> Выездной сервис</h3>
-        <p>Быстрый выезд мастера на место поломки по Воронежу и области 24/7.</p>
+        <div>
+          <h3><i class="fa-solid fa-truck-medical"></i> Экстренный шиномонтаж</h3>
+          <p>Круглосуточный прием и выезд по адресу при проколах и ЧП на дороге.</p>
+        </div>
+        <a class="btn btn-main" href="tel:+79518788740" style="padding:10px 16px; font-size:13px"><i class="fa-solid fa-phone"></i> Срочный вызов</a>
       </div>
     </div>
 
     <div class="tags">
-      <span><i class="fa-solid fa-check"></i> Лазерный стенд</span>
-      <span><i class="fa-solid fa-check"></i> Мойка колес</span>
-      <span><i class="fa-solid fa-check"></i> Оплата картой / QR</span>
-      <span><i class="fa-solid fa-check"></i> Дошиповка</span>
-      <span><i class="fa-solid fa-check"></i> Экстренный приём ночью</span>
-      <span><i class="fa-solid fa-check"></i> Комфортная зона ожидания</span>
+      <span><i class="fa-solid fa-shield-halved"></i> Гарантия качества</span>
+      <span><i class="fa-solid fa-gears"></i> Современное оборудование</span>
+      <span><i class="fa-solid fa-users"></i> Опытная команда</span>
+      <span><i class="fa-solid fa-user-check"></i> Индивидуальный подход</span>
     </div>
   </div>
 </section>
@@ -306,7 +263,7 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
       <blockquote>
         <div>
           <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p>«Хочу поблагодарить мастера за помощь. Колесо не накачивалось, заменил деталь, проверил давление. Всё быстро и профессионально. Работают круглосуточно, да ещё и выезд предусмотрен!»</p>
+          <p>«Хочу поблагодарить молодого человека за оказание помощи. Колесо не накачивалось, заменил деталь проверил давление в шинах. Все быстро и профессионально. Работают круглосуточно, да еще и выезд на адрес предусмотрен.»</p>
         </div>
         <cite>Сабина Тагиева<span>Знаток города 3 уровня</span></cite>
       </blockquote>
@@ -314,7 +271,7 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
       <blockquote>
         <div>
           <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p>«Ночью проколола колесо — ситуация стрессовая. Позвонила в 36Шин, оформили экстренный приём. Приехала — сразу приняли, быстро устранили прокол. Цена порадовала, спасибо что работаете ночью!»</p>
+          <p>«Ночью проколола колесо — ситуация стрессовая. Позвонила в «36 шин», оформили экстренный приём. Приехала — сразу приняли, всё сделали оперативно. Работали аккуратно, цена порадовала!»</p>
         </div>
         <cite>Виктория И.<span>Знаток города 3 уровня</span></cite>
       </blockquote>
@@ -331,7 +288,7 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
         <dt>Адрес мастерской</dt>
         <dd>г. Воронеж, ул. Мостовая, 5Д <br><span style="font-size:16px; color:var(--mut)">(микрорайон Тенистый)</span></dd>
         
-        <dt>Телефон мастера (Звонки / Max)</dt>
+        <dt>Телефон для связи</dt>
         <dd><a href="tel:+79518788740">+7 (951) 878-87-40</a></dd>
         
         <dt>Сообщество ВКонтакте</dt>
@@ -339,8 +296,8 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
         
         <dt>Режим работы</dt>
         <dd style="font:400 16px/1.5 var(--body); margin-top:8px">
-          Ежедневно: <strong>08:00 – 22:00</strong><br>
-          Ночной прием и выезд: <strong>Круглосуточно (24/7) по звонку</strong>
+          График: <strong>08:00 – 22:00 ежедневно</strong><br>
+          Экстренный приём и выезд: <strong>Круглосуточно (24/7)</strong>
         </dd>
       </dl>
       <p style="margin-top:28px">
@@ -349,30 +306,27 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
     </div>
 
     <div class="max-box" id="order">
-      <h3>Заявка через Max</h3>
-      <p>Заполните форму: текст скопируется в буфер обмена, после чего вы сможете отправлять его в чат Max с мастером.</p>
+      <h3>Заявка в Max</h3>
+      <p>Заполните форму: текст скопируется в буфер обмена для отправки автомеханику в Max.</p>
       
       <form class="orderform">
         <div class="f2">
-          <label>Имя <input name="name" required placeholder="Как к вам обращаться"></label>
+          <label>Имя <input name="name" required placeholder="Ваше имя"></label>
           <label>Телефон <input name="phone" type="tel" required placeholder="+7 (___) ___-__-__"></label>
         </div>
-        <div class="f2">
-          <label>Услуга
-            <select name="svc">
-              <option>Переобувка / Комплекс</option>
-              <option>Лазерная балансировка</option>
-              <option>Правка / раскатка дисков</option>
-              <option>Ремонт прокола / пореза</option>
-              <option>Выездной шиномонтаж</option>
-              <option>Дошиповка шин</option>
-            </select>
-          </label>
-          <label>Диаметр <input name="size" placeholder="Например R17"></label>
-        </div>
-        <label>Комментарий <textarea name="msg" placeholder="Марка авто, нужное время или адрес выезда"></textarea></label>
+        <label>Услуга
+          <select name="svc">
+            <option>Лазерная балансировка</option>
+            <option>Правка литых дисков / Раскатка</option>
+            <option>Адаптация колёс</option>
+            <option>Дошиповка шин</option>
+            <option>Мойка колёс</option>
+            <option>Экстренный выезд / Приём 24/7</option>
+          </select>
+        </label>
+        <label>Комментарий <textarea name="msg" placeholder="Марка авто, удобное время или адрес для выезда"></textarea></label>
         <button class="btn btn-main" type="submit" style="width:100%; justify-content:center"><i class="fa-solid fa-copy"></i> Скопировать и открыть Max</button>
-        <p class="ok" role="status">Заявка скопирована! Вставьте ее в открывшийся диалог Max.</p>
+        <p class="ok" role="status">Заявка скопирована! Вставьте её в чат Max.</p>
       </form>
     </div>
   </div>
@@ -396,8 +350,8 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
 <!-- Max Dialog Modal -->
 <dialog id="dlg">
   <button class="x" aria-label="Закрыть" id="close">×</button>
-  <h3 style="font-size:32px; margin-bottom:12px">Связаться в Max</h3>
-  <p style="color:var(--mut); margin-bottom:24px; font-size:15px">Номер мастера для созвона и сообщений в Max: <b style="color:var(--txt)">+7 (951) 878-87-40</b></p>
+  <h3 style="font-size:32px; margin-bottom:12px">Заказ через Max</h3>
+  <p style="color:var(--mut); margin-bottom:24px; font-size:15px">Номер мастера для заказов и звонков в Max: <b style="color:var(--txt)">+7 (951) 878-87-40</b></p>
   <div class="cta">
     <a class="btn btn-main" href="#order" id="toform">Заполнить форму</a>
     <a class="btn btn-line" href="tel:+79518788740">Позвонить</a>
@@ -406,56 +360,7 @@ dialog::backdrop { background: rgba(0,0,0,.8); backdrop-filter: blur(4px); }
 
 <script>
 const MAX_LINK = "https://max.ru";
-
-const COLS = ["13/14","15","16","17","18","19","20","21","22/23"];
-const mk = (c,a,b,d,e,f,g) => Object.fromEntries(c.map((k,i)=>[k,{s:a[i],m:b[i],b:d[i],p1:e[i],p4:f[i],p6:g?g[i]:null}]));
-
-const DATA = {
- car: { name: "Легковая", d: mk(COLS, [150,150,200,200,250,250,250,300,300], [150,200,200,200,250,300,500,550,600], [200,200,200,250,250,300,500,550,600], [500,550,600,650,750,850,1250,1400,1500], [2000,2200,2400,2600,3000,3400,5000,5600,6000]) },
- suv: { name: "Кроссовер", d: mk(COLS.slice(1), [200,250,250,250,250,250,300,300], [250,250,250,300,350,500,550,600], [250,250,300,300,350,500,550,600], [700,750,800,850,950,1250,1400,1500], [2800,3000,3200,3400,3800,5000,5600,6000]) },
- off: { name: "Внедорожник", d: mk(COLS.slice(1), [200,250,250,250,300,300,300,300], [300,300,350,350,400,500,550,600], [300,350,350,400,400,500,550,600], [800,900,950,1000,1100,1300,1350,1500], [3200,3600,3800,4000,4400,5200,5400,6000]) },
- truck: { name: "Микроавтобус / ГАЗель", d: mk(["15","16","17"], [300,300,300], [350,350,350], [350,350,350], [1000,1000,1000], [4000,4000,4000], [6000,6000,6000]) }
-};
-
-const fmt = n => n.toLocaleString("ru-RU").replace(/\u00a0/g, " ");
-let type = "car", size = "13/14";
 const $ = s => document.querySelector(s);
-
-function btns(box, items, cur, cb) {
-  box.innerHTML = "";
-  items.forEach(([k,t]) => {
-    const b = document.createElement("button");
-    b.type = "button";
-    b.textContent = t;
-    b.setAttribute("aria-pressed", String(k === cur));
-    b.onclick = () => cb(k);
-    box.appendChild(b);
-  });
-}
-
-function render() {
-  const d = DATA[type].d;
-  if (!d[size] && size !== "24") size = Object.keys(d)[0];
-  
-  btns($("#types"), Object.entries(DATA).map(([k,v]) => [k, v.name]), type, k => { type = k; size = Object.keys(DATA[k].d)[0]; render(); });
-  btns($("#sizes"), Object.keys(d).concat(type === "truck" ? [] : ["24"]).map(x => [x, "R" + x]), size, k => { size = k; render(); });
-  
-  const r = d[size];
-  const add = [...document.querySelectorAll("[data-add]:checked")].reduce((a,c) => a + Number(c.dataset.add), 0);
-  const t = v => r ? fmt(v) + " ₽" : "по запросу";
-  
-  $("#r1").textContent = t(r && r.s);
-  $("#r2").textContent = t(r && r.m);
-  $("#r3").textContent = t(r && r.b);
-  $("#p1").textContent = t(r && r.p1 + add);
-  $("#p4").textContent = r ? fmt(r.p4 + add * 4) : "по запросу";
-  $("#padd").textContent = r ? fmt(add * 4) + " ₽" : "—";
-  $("#row6").hidden = !(r && r.p6);
-  if (r && r.p6) $("#p6").textContent = fmt(r.p6 + add * 6) + " ₽";
-}
-
-document.querySelectorAll("[data-add]").forEach(c => c.addEventListener("change", render));
-render();
 
 const dlg = $("#dlg");
 document.querySelectorAll("[data-max]").forEach(b => b.addEventListener("click", e => { e.preventDefault(); dlg.showModal(); }));
@@ -466,7 +371,7 @@ dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
 $(".orderform").addEventListener("submit", async e => {
   e.preventDefault();
   const f = new FormData(e.target);
-  const text = `Заявка 36ШИНМОНТАЖ\nИмя: ${f.get("name")}\nТелефон: ${f.get("phone")}\nУслуга: ${f.get("svc")}\nДиаметр: ${f.get("size") || "—"}\nКомментарий: ${f.get("msg") || "—"}`;
+  const text = `Заявка 36ШИНМОНТАЖ\nИмя: ${f.get("name")}\nТелефон: ${f.get("phone")}\nУслуга: ${f.get("svc")}\nКомментарий: ${f.get("msg") || "—"}`;
   try {
     await navigator.clipboard.writeText(text);
   } catch(_) {
